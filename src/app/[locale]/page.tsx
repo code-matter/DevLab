@@ -1,10 +1,11 @@
 import { Button } from "antd";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("home");
   return (
     <main className="main">
-      <Button>YO</Button>
+      <Button>{t("title")}</Button>
     </main>
   );
 }
